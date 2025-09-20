@@ -9,12 +9,20 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>SQL</li>
+        <li>Python</li>
+        <li>Excel</li>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>Figma</li>
+        <li>Looker Studio</li>
+        <li>PowerShell</li>
+        <li>Power Automate</li>
+        <li>Google Cloud</li>
+        <li>Azure Devops</li>
+        <li>Git</li>
+        <li>R</li>
+        <li>HTML & CSS</li>
       </ul>
     ),
   },
@@ -23,8 +31,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>University of Michigan, Ann Arbor</li>
+        <li>Bachelor of Science in Information, May 2025</li>
       </ul>
     ),
   },
@@ -33,8 +41,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Google Business Intelligence</li>
       </ul>
     ),
   },
@@ -57,12 +64,11 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            Hi! I am Annabel, a recent graduate from the University of Michigan School of Information specializing in Data Analysis with minors in Business and Economics. I am a quick learner and I am always
+            looking to expand my knowledge and skill set. Bridging people, business, and technology is what I'm aiming for. I hope to create solutions that make it easier for people to access information, automate business processes, transform data and visualize it to form actionable insights assisting business decisions.
+<br></br><br></br>
+            In my free time, I enjoy dancing, fencing, playing tennis, and exploring new places. I also love hanging out with friends and family.
+
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
