@@ -64,7 +64,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             Hi! I am Annabel, a recent graduate from the University of Michigan School of Information specializing in Data Analysis with minors in Business and Economics. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. Bridging people, business, and technology is what I'm aiming for. I hope to create solutions that make it easier for people to access information, automate business processes, transform data and visualize it to form actionable insights assisting business decisions.
+            looking to expand my knowledge and skill set. Bridging people, business, and technology is what I&apos;m aiming for. I hope to create solutions that make it easier for people to access information, automate business processes, transform data and visualize it to form actionable insights assisting business decisions.
 <br></br><br></br>
             In my free time, I enjoy dancing, fencing, playing tennis, and exploring new places. I also love hanging out with friends and family.
 
@@ -96,7 +96,7 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-        <Image src="/images/my-pic.JPEG" width={500} height={500} className="rounded-lg mt-16" />
+        <Image src="/images/my-pic.JPEG" width={500} height={500} className="rounded-lg mt-16" alt="Annabel Zhuang professional photo" />
       </div>
     </section>
   );

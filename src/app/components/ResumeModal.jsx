@@ -76,8 +76,8 @@ const ResumeModal = ({ isOpen, onClose }) => {
 
         <div className="mb-6">
           <p className="text-[#ADB7BE] mb-4">
-            To view my resume, please enter the access code. If you don't have it, 
-            feel free to contact me and I'll provide it to you.
+            To view my resume, please enter the access code. If you don&apos;t have it, 
+            feel free to contact me and I&apos;ll provide it to you.
           </p>
           
           <form onSubmit={handleSubmit}>
@@ -159,7 +159,7 @@ const ResumeModal = ({ isOpen, onClose }) => {
 
         <div className="text-center">
           <p className="text-[#ADB7BE] text-sm">
-            Don't have the code? 
+            Don&apos;t have the code? 
             <button
               onClick={() => {
                 handleClose();
