@@ -11,7 +11,7 @@ const TabButton = ({ active, selectTab, children }) => {
 
   return (
     <button onClick={selectTab} className="transition-all duration-300">
-      <p className={`mr-3 font-bold text-base px-3 py-1 rounded ${active ? 'bg-white/10' : 'hover:bg-white/5'} hover:text-white ${buttonClasses}`}>
+      <p className={`mr-3 font-semibold text-lg px-3 py-1 rounded ${active ? 'bg-white/10' : 'hover:bg-white/5'} hover:text-white ${buttonClasses}`}>
         {children}
       </p>
       <motion.div
