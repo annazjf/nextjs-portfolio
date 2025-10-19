@@ -59,6 +59,16 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
+  {
+    id: 7,
+    title: "Wine Infographic Design",
+    description: "Educational infographic showcasing grape wine varieties, taste profiles, and wine characteristics with visual storytelling",
+    image: "/images/projects/infographic-preview.jpg", // Wine infographic preview
+    tag: ["All", "Design"],
+    gitUrl: "/projects/data-infographic.pdf", // Your PDF file path
+    previewUrl: "/projects/data-infographic.pdf", // Same PDF for viewing
+    type: "pdf"
+  },
 ];
 
 const ProjectsSection = () => {
@@ -100,6 +110,11 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Design"
+          isSelected={tag === "Design"}
+        />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
@@ -117,6 +132,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              type={project.type}
             />
           </motion.li>
         ))}
