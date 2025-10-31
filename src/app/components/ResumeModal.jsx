@@ -135,14 +135,14 @@ const ResumeModal = ({ isOpen, onClose }) => {
                     onClick={handleViewResume}
                     className="flex-1 bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2.5 px-5 rounded-lg transition-colors"
                   >
-                    👁️ View Resume
+                    View Resume
                   </button>
                   <button
                     type="button"
                     onClick={handleDownloadResume}
                     className="flex-1 bg-green-600 hover:bg-green-700 text-white font-semibold py-2.5 px-5 rounded-lg transition-colors"
                   >
-                    📥 Download
+                    Download
                   </button>
                 </div>
                 <button

@@ -69,6 +69,16 @@ const projectsData = [
     previewUrl: "/projects/data-infographic.pdf", // Same PDF for viewing
     type: "pdf"
   },
+  {
+    id: 8,
+    title: "Logo & App Interface Design",
+    description: "Mobile app interface design for Koi no Kie featuring intuitive user experience, modern UI patterns, and engaging visual design.",
+    image: "/images/projects/logo-design.jpg",
+    tag: ["All", "Design"],
+    gitUrl: "/",
+    previewUrl: "/projects/koi-no-kie",
+    type: "figma"
+  },
 ];
 
 const ProjectsSection = () => {
