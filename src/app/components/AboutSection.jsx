@@ -63,10 +63,10 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            Hi, I'm Annabel — a recent graduate from the University of Michigan School of Information, where I specialized in Data Analysis with minors in Business and Economics. I'm passionate about bridging people, business, and technology to create data-driven solutions that make an impact.
+            Hi, I&apos;m Annabel — a recent graduate from the University of Michigan School of Information, where I specialized in Data Analysis with minors in Business and Economics. I&apos;m passionate about bridging people, business, and technology to create data-driven solutions that make an impact.
             <br />
             <br />
-            I enjoy turning complex data into clear insights that help businesses make smarter decisions, streamline processes, and uncover opportunities for growth. I'm always eager to learn new tools, experiment with emerging technologies, and expand my skill set.
+            I enjoy turning complex data into clear insights that help businesses make smarter decisions, streamline processes, and uncover opportunities for growth. I&apos;m always eager to learn new tools, experiment with emerging technologies, and expand my skill set.
             <br />
             <br />
             In my free time, I enjoy dancing, fencing, playing tennis, and exploring new places. I also love hanging out with friends and family.
