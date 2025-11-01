@@ -123,7 +123,7 @@ const InfographicProject = () => {
             {/* Interaction Guide */}
             <div className="mt-4 text-left">
               <div className="text-[#ADB7BE] text-sm space-y-1">
-                <p>🔍 Use built-in zoom "+" icon on the bottom left corner</p>
+                <p>🔍 Use built-in zoom &quot;+&quot; icon on the bottom left corner</p>
                 <p>📱 Swipe on mobile</p>
               </div>
             </div>
