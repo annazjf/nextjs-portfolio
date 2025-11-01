@@ -1,26 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { ArrowLeftIcon, MagnifyingGlassPlusIcon, MagnifyingGlassMinusIcon } from "@heroicons/react/24/outline";
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 const InfographicProject = () => {
-  const [zoomLevel, setZoomLevel] = useState(100);
-  
-  const zoomIn = () => {
-    if (zoomLevel < 200) {
-      setZoomLevel(zoomLevel + 25);
-    }
-  };
-
-  const zoomOut = () => {
-    if (zoomLevel > 50) {
-      setZoomLevel(zoomLevel - 25);
-    }
-  };
-
-  const resetZoom = () => {
-    setZoomLevel(100);
-  };
 
   return (
     <div className="min-h-screen bg-[#121212] text-white">
@@ -81,8 +64,8 @@ const InfographicProject = () => {
                   <li>• Wine variety classifications (Red, Rosé, White)</li>
                   <li>• Taste profile breakdown and descriptors</li>
                   <li>• Seasonal availability information</li>
-                  <li>• Caloric content and nutritional facts</li>
-                  <li>• Visual wine glass illustration with taste mapping</li>
+                  <li>• Digestible elements breakdown</li>
+                  <li>• Visual world map with wine consumption mapping</li>
                 </ul>
               </div>
 
@@ -98,99 +81,51 @@ const InfographicProject = () => {
             </div>
           </div>
 
-          {/* PDF Viewer with Zoom */}
+          {/* Interactive Infographic Display */}
           <div>
-            <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-semibold">View Infographic</h2>
-              <div className="flex items-center gap-4">
-                <span className="text-[#ADB7BE] text-sm">
-                  Zoom: {zoomLevel}%
-                </span>
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={zoomOut}
-                    disabled={zoomLevel <= 50}
-                    className="p-2 rounded-lg bg-[#33353F] hover:bg-primary-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    title="Zoom out"
-                  >
-                    <MagnifyingGlassMinusIcon className="h-5 w-5 text-white" />
-                  </button>
-                  <button
-                    onClick={resetZoom}
-                    className="px-3 py-2 text-sm rounded-lg bg-[#33353F] hover:bg-primary-600 transition-colors text-white"
-                    title="Reset zoom"
-                  >
-                    Reset
-                  </button>
-                  <button
-                    onClick={zoomIn}
-                    disabled={zoomLevel >= 200}
-                    className="p-2 rounded-lg bg-[#33353F] hover:bg-primary-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    title="Zoom in"
-                  >
-                    <MagnifyingGlassPlusIcon className="h-5 w-5 text-white" />
-                  </button>
-                </div>
-              </div>
+            <div className="mb-6">
+              <h2 className="text-2xl font-semibold">Interactive Wine Infographic</h2>
+              <p className="text-[#ADB7BE] text-sm mt-2">
+                Explore the wine guide with page-flipping interactions
+              </p>
             </div>
-            <div className="bg-[#181818] p-4 rounded-lg overflow-auto">
+            
+            {/* FlipHTML5 Embed */}
+            <div className="bg-[#181818] p-4 rounded-lg">
               <div 
-                className="transition-transform duration-300 ease-in-out"
-                style={{ 
-                  transform: `scale(${zoomLevel / 100})`,
-                  transformOrigin: 'top left'
+                style={{
+                  position: "relative",
+                  paddingTop: "max(60%, 324px)",
+                  width: "100%",
+                  height: 0
                 }}
               >
-                <iframe
-                  src="/projects/data-infographic.pdf"
-                  className="w-full h-[600px] md:h-[700px] lg:h-[800px] rounded"
-                  title="Wine Infographic Design"
+                <iframe 
+                  style={{
+                    position: "absolute",
+                    border: "none",
+                    width: "100%",
+                    height: "100%",
+                    left: 0,
+                    top: 0
+                  }}
+                  src="https://online.fliphtml5.com/riccr/mpui/"
+                  seamless="seamless"
+                  scrolling="no"
+                  frameBorder="0"
+                  allowTransparency="true"
+                  allowFullScreen="true"
+                  title="Interactive Wine Infographic"
                 />
               </div>
             </div>
             
-            {/* Zoom Controls - Bottom */}
-            <div className="mt-4 flex justify-center items-center gap-4">
-              <button
-                onClick={() => setZoomLevel(50)}
-                className={`px-3 py-1 text-sm rounded transition-colors ${
-                  zoomLevel === 50 ? 'bg-primary-500 text-white' : 'bg-[#33353F] text-[#ADB7BE] hover:bg-[#ADB7BE] hover:text-black'
-                }`}
-              >
-                50%
-              </button>
-              <button
-                onClick={() => setZoomLevel(75)}
-                className={`px-3 py-1 text-sm rounded transition-colors ${
-                  zoomLevel === 75 ? 'bg-primary-500 text-white' : 'bg-[#33353F] text-[#ADB7BE] hover:bg-[#ADB7BE] hover:text-black'
-                }`}
-              >
-                75%
-              </button>
-              <button
-                onClick={() => setZoomLevel(100)}
-                className={`px-3 py-1 text-sm rounded transition-colors ${
-                  zoomLevel === 100 ? 'bg-primary-500 text-white' : 'bg-[#33353F] text-[#ADB7BE] hover:bg-[#ADB7BE] hover:text-black'
-                }`}
-              >
-                100%
-              </button>
-              <button
-                onClick={() => setZoomLevel(125)}
-                className={`px-3 py-1 text-sm rounded transition-colors ${
-                  zoomLevel === 125 ? 'bg-primary-500 text-white' : 'bg-[#33353F] text-[#ADB7BE] hover:bg-[#ADB7BE] hover:text-black'
-                }`}
-              >
-                125%
-              </button>
-              <button
-                onClick={() => setZoomLevel(150)}
-                className={`px-3 py-1 text-sm rounded transition-colors ${
-                  zoomLevel === 150 ? 'bg-primary-500 text-white' : 'bg-[#33353F] text-[#ADB7BE] hover:bg-[#ADB7BE] hover:text-black'
-                }`}
-              >
-                150%
-              </button>
+            {/* Interaction Guide */}
+            <div className="mt-4 text-left">
+              <div className="text-[#ADB7BE] text-sm space-y-1">
+                <p>🔍 Use built-in zoom "+" icon on the bottom left corner</p>
+                <p>📱 Swipe on mobile</p>
+              </div>
             </div>
           </div>
         </div>
@@ -201,14 +136,27 @@ const InfographicProject = () => {
             <div className="bg-[#181818] p-6 rounded-lg">
               <h3 className="text-lg font-semibold mb-3 text-primary-400">Color Psychology</h3>
               <p className="text-[#ADB7BE] mb-4">
-                Strategic use of burgundy, rose, and neutral tones to represent wine varieties 
-                while maintaining sophisticated, wine-industry appropriate aesthetics.
+                This infographic demonstrates foundational wine information using direct complementary 
+                 and contrast color. High contrast between red and green creates visual impact, while 
+                lighter tones provide varieties.
               </p>
-              <div className="flex gap-2">
-                <div className="w-8 h-8 rounded-full" style={{backgroundColor: '#8B1538'}} title="Red Wine"></div>
-                <div className="w-8 h-8 rounded-full" style={{backgroundColor: '#C85A54'}} title="Rosé Wine"></div>
-                <div className="w-8 h-8 rounded-full border-2 border-[#C85A54]" title="White Wine"></div>
-              </div>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="flex gap-1">
+                    <div className="w-6 h-6 rounded" style={{backgroundColor: '#700A08'}} title="Dark Red - #700A08"></div>
+                    <div className="w-6 h-6 rounded" style={{backgroundColor: '#B03A38'}} title="Medium Red - #B03A38"></div>
+                    <div className="w-6 h-6 rounded" style={{backgroundColor: '#F08A89'}} title="Light Red - #F08A89"></div>
+                  </div>
+                  <span className="text-xs text-[#ADB7BE]">Red Wine Spectrum</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="flex gap-1">
+                    <div className="w-6 h-6 rounded" style={{backgroundColor: '#50C575'}} title="Medium Green - #50C575"></div>
+                    <div className="w-6 h-6 rounded" style={{backgroundColor: '#087029'}} title="Dark Green - #087029"></div>
+                  </div>
+                  <span className="text-xs text-[#ADB7BE]">Complementary Green Accents</span>
+                </div>
+              </div>  
             </div>
             
             <div className="bg-[#181818] p-6 rounded-lg">

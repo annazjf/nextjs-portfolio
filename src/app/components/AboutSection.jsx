@@ -42,6 +42,8 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Google Business Intelligence</li>
+        <li>GitHub Foundations</li>
+        <li>Google Cloud AI Agents</li>
       </ul>
     ),
   },

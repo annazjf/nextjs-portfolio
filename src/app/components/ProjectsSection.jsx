@@ -7,77 +7,42 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 7,
     title: "Wine Infographic Design",
-    description: "Educational infographic showcasing grape wine varieties, taste profiles, and wine characteristics with visual storytelling",
-    image: "/images/projects/infographic-preview.jpg", // Wine infographic preview
+    description: "An educational infographic showcase grape wine varieties, taste profiles, and wine characteristics with visual storytelling. 2023.",
+    image: "/images/projects/infographic-preview.jpg", 
     tag: ["All", "Design"],
-    gitUrl: "/projects/data-infographic.pdf", // Your PDF file path
-    previewUrl: "/projects/data-infographic.pdf", // Same PDF for viewing
+    gitUrl: "/", 
+    previewUrl: "/projects/infographic", 
     type: "pdf"
   },
   {
-    id: 8,
+    id: 2,
     title: "Logo & App Interface Design",
-    description: "Mobile app interface design for Koi no Kie featuring intuitive user experience, modern UI patterns, and engaging visual design.",
+    description: "Mobile app interface design for Koi no Kie featuring intuitive user experience, modern UI patterns, and engaging visual design. 2023.",
     image: "/images/projects/logo-design.jpg",
     tag: ["All", "Design"],
     gitUrl: "/",
     previewUrl: "/projects/koi-no-kie",
     type: "figma"
+  },
+  {
+    id: 3,
+    title: "Ireland Study Website",
+    description: "Personal travel website using HTML, CSS, and JavaScript documenting my study abroad journey in Ireland with blogs, photos, and cultural experiences during my time in Ireland. 2024.",
+    image: "/images/projects/Ireland.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/annazjf/Ireland-Study-Abroad-Website",
+    previewUrl: "https://annazjf.github.io/dublin/",
+  },
+  {
+    id: 4,
+    title: "Heart Disease Analysis Project SI370",
+    description: "A comprehensive analysis of heart disease datasets using Python and machine learning techniques to identify key factors and trends. 2024.",
+    image: "/images/projects/SI370-Final-Project.jpg",
+    tag: ["All", "Data"],
+    gitUrl: "https://github.com/annazjf/Heart-Disease-Analysis-Project-SI370",
+    previewUrl: "/projects/si370-heart-disease",
+    type: "pdf"
   },
 ];
 
@@ -117,13 +82,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Design"
+          isSelected={tag === "Design"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Design"
-          isSelected={tag === "Design"}
+          name="Data"
+          isSelected={tag === "Data"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
