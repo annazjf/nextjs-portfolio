@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -10,18 +9,32 @@ const NavLink = ({ href, title }) => {
     active: { width: "100%" },
   };
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <div 
       className="relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link
+      <a
         href={href}
-        className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white transition-colors duration-300"
+        onClick={handleClick}
+        className="block py-2 pl-3 pr-4 text-[#ADB7BE] sm:text-xl rounded md:p-0 hover:text-white transition-colors duration-300 cursor-pointer"
       >
         {title}
-      </Link>
+      </a>
       <motion.div
         animate={isHovered ? "active" : "default"}
         variants={underlineVariants}

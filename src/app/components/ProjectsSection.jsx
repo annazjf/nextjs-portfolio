@@ -32,7 +32,7 @@ const projectsData = [
     image: "/images/projects/Ireland.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/annazjf/Ireland-Study-Abroad-Website",
-    previewUrl: "https://annazjf.github.io/dublin/",
+    previewUrl: "https://annazjf.github.io/Ireland-Study-Abroad-Website/",
   },
   {
     id: 4,
@@ -43,6 +43,26 @@ const projectsData = [
     gitUrl: "https://github.com/annazjf/Heart-Disease-Analysis-Project-SI370",
     previewUrl: "/projects/si370-heart-disease",
     type: "pdf"
+  },
+  {
+    id: 5,
+    title: "EV Car Market Data Analysis SI330",
+    description: "Data-driven analysis of electric vehicle market trends using advanced statistical methods and data science techniques to uncover consumer behavior patterns and market opportunities. 2024.",
+    image: "/images/projects/EV-project.jpg",
+    tag: ["All", "Data"],
+    gitUrl: "https://github.com/annazjf/EV-Car-Marke-Data-Analysis-SI-300",
+    previewUrl: "/projects/ev-analysis",
+    type: "pdf"
+  },
+  {
+    id: 6,
+    title: "Market Data ITS Analysis SI485",
+    description: "Interrupted Time Series analysis for a partner company to optimize marketing spend and reduce OTA dependency. Applied advanced analytics to evaluate promotional effectiveness in Singapore's competitive hospitality sector. 2025.",
+    image: "/images/projects/Market-ITS-Analysis.jpg",
+    tag: ["All", "Data"],
+    gitUrl: "/",
+    previewUrl: "/projects/market-data-its",
+    type: "poster"
   },
 ];
 

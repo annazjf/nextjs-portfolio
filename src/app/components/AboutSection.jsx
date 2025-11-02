@@ -100,7 +100,7 @@ const AboutSection = () => {
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
-        <Image src="/images/my-pic.JPEG" width={500} height={500} className="rounded-lg mt-16" alt="Annabel Zhuang professional photo" />
+        <Image src="/images/my-pic.JPEG" width={500} height={500} className="rounded-lg mt-16" alt="Annabel Zhuang graduation photo" />
       </div>
     </section>
   );

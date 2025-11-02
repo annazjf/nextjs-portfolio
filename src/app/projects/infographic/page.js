@@ -7,22 +7,26 @@ const InfographicProject = () => {
 
   return (
     <div className="min-h-screen bg-[#121212] text-white">
-      {/* Header with Back Button */}
+      {/* Floating Back Button */}
+      <Link 
+        href="/" 
+        className="fixed top-6 left-6 z-50 bg-[#181818] hover:bg-primary-400 text-primary-400 hover:text-white p-3 rounded-full shadow-lg border border-gray-700 hover:border-primary-400 transition-all duration-300 group"
+      >
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        <span className="sr-only">Back to Portfolio</span>
+      </Link>
+      
+      {/* Header */}
       <div className="container mx-auto px-12 py-8">
-        <Link 
-          href="/#projects" 
-          className="inline-flex items-center text-primary-500 hover:text-primary-400 mb-8"
-        >
-          <ArrowLeftIcon className="h-5 w-5 mr-2" />
-          Back to Projects
-        </Link>
         
         {/* Project Header */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
             Wine Infographic Design
           </h1>
-          <p className="text-xl text-[#ADB7BE] max-w-3xl">
+          <p className="text-lg text-gray-300 mb-8 text-center max-w-3xl mx-auto">
             Educational infographic design showcasing grape wine varieties, taste profiles, 
             and wine characteristics through engaging visual storytelling and design.
           </p>
@@ -45,9 +49,9 @@ const InfographicProject = () => {
               </div>
 
               <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Tools Used</h3>
+                <h3 className="text-lg font-medium text-primary-400 mb-2">Tools & Technologies</h3>
                 <div className="flex flex-wrap gap-2">
-                  {["Adobe Illustrator", "Photoshop", "Color Theory", "Typography"].map((tool) => (
+                  {["Adobe Illustrator", "Photoshop", "InDesign", "Color Theory", "Typography", "Visual Design"].map((tool) => (
                     <span 
                       key={tool}
                       className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
@@ -171,15 +175,16 @@ const InfographicProject = () => {
         </div>
 
 
-        {/* Back to Projects */}
-        <div className="text-center">
-          <Link 
-            href="/#projects" 
-            className="inline-block bg-transparent border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all"
-          >
-            View More Projects
-          </Link>
-        </div>
+        {/* Floating View More Projects Button */}
+        <Link 
+          href="/#projects" 
+          className="fixed bottom-6 right-6 z-50 bg-[#181818] hover:bg-primary-400 text-primary-400 hover:text-white p-3 rounded-full shadow-lg border border-gray-700 hover:border-primary-400 transition-all duration-300 group"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+          <span className="sr-only">View More Projects</span>
+        </Link>
       </div>
     </div>
   );
