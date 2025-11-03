@@ -47,7 +47,7 @@ const projectsData = [
   {
     id: 5,
     title: "EV Car Market Data Analysis SI330",
-    description: "Data-driven analysis of electric vehicle market trends using advanced statistical methods and data science techniques to uncover consumer behavior patterns and market opportunities. 2024.",
+    description: "Data-driven analysis of electric vehicle market trends using advanced statistical methods and data science techniques to uncover consumer behavior patterns and market opportunities. 2024.8",
     image: "/images/projects/EV-project.jpg",
     tag: ["All", "Data"],
     gitUrl: "https://github.com/annazjf/EV-Car-Marke-Data-Analysis-SI-300",
@@ -57,7 +57,7 @@ const projectsData = [
   {
     id: 6,
     title: "Market Data ITS Analysis SI485",
-    description: "Interrupted Time Series analysis for a partner company to optimize marketing spend and reduce OTA dependency. Applied advanced analytics to evaluate promotional effectiveness in Singapore's competitive hospitality sector. 2025.",
+    description: "Interrupted Time Series analysis for a partner company to optimize marketing spend and reduce OTA dependency. Applied advanced analytics to evaluate promotional effectiveness in Singapore's competitive hospitality sector. 2025.5",
     image: "/images/projects/Market-ITS-Analysis.jpg",
     tag: ["All", "Data"],
     gitUrl: "/",
@@ -67,12 +67,22 @@ const projectsData = [
   {
     id: 7,
     title: "Uncovering Art History: Web Scraping Archives",
-    description: "Web scraping and text analysis project with Archives of American Art and University of Michigan. Used machine learning and NLP to uncover citation patterns in digital art scholarship. 2025.",
+    description: "Web scraping and text analysis project with Archives of American Art. Used machine learning and NLP to uncover citation patterns in digital art scholarship. 2025.3",
     image: "/images/projects/AAA.jpg",
     tag: ["All", "Data"], 
     gitUrl: "/",
     previewUrl: "/projects/art-archives",
     type: "flipbook"
+  },
+  {
+    id: 8,
+    title: "Shipment Fraud Detection Dashboard",
+    description: "Advanced fraud detection and visualization project built with Looker Studio to monitor high-volume shipping transactions, identify anomalies, and quantify fraud risk in global logistics. 2025.7",
+    image: "/images/projects/Hackathon_Dashboard.jpg",
+    tag: ["All", "Data"],
+    gitUrl: "/",
+    previewUrl: "/projects/fraud-detection",
+    type: "dashboard"
   },
 ];
 

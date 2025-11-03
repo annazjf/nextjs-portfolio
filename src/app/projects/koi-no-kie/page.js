@@ -49,7 +49,6 @@ const KoiNoKieProject = () => {
         {/* App Interface Preview - Full Width */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">App Interface Preview</h2>
-          
           <div className="bg-[#181818] p-6 rounded-lg">
             <div className="w-full">
               <iframe 

@@ -102,6 +102,9 @@ const SI370HeartDiseaseProject = () => {
               <p className="text-[#ADB7BE] text-sm mt-2">
                 Flip through the complete data science analysis report
               </p>
+              <p className="text-[#ADB7BE] text-sm mt-2">
+                Click the &quot;+&quot; button to expand to full screen for the best viewing experience.
+              </p>
             </div>
             
             {/* FlipHTML5 Embed */}

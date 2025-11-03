@@ -91,10 +91,13 @@ const InfographicProject = () => {
 
           {/* Interactive Infographic Display */}
           <div>
-            <div className="mb-6">
+                        <div>
               <h2 className="text-2xl font-semibold">Interactive Wine Infographic</h2>
               <p className="text-[#ADB7BE] text-sm mt-2">
                 Explore the wine guide with page-flipping interactions
+              </p>
+              <p className="text-[#ADB7BE] text-sm mt-2">
+                Click the &quot;+&quot; button to expand to full screen for the best viewing experience.
               </p>
             </div>
             

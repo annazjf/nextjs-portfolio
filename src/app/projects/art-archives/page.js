@@ -46,7 +46,7 @@ export default function ArtArchivesPage() {
 
         {/* Project Overview */}
         <div className="bg-[#181818] rounded-xl p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-4 text-center">Project Overview</h2>
+          <h2 className="text-2xl font-bold mb-4 text-left">Project Overview</h2>
           <div className="text-gray-300 space-y-4">
             <p>
               This project, conducted in collaboration with the Archives of American Art (AAA), aimed to uncover how AAA&apos;s collections and journal articles are cited across online repositories. By combining web scraping, text analysis, and natural language processing, we created a dataset of digital citations that provides insight into how researchers engage with the AAA&apos;s resources.
@@ -59,7 +59,12 @@ export default function ArtArchivesPage() {
         </div>
 
         {/* Interactive Report */}
-        <div className="bg-[#181818] rounded-xl p-6 mb-8">          
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-left">Interactive Analysis Report</h2>
+          <p className="text-gray-300 mb-6 text-center">
+            Click the &quot;+&quot; button to expand to full screen for the best viewing experience.
+          </p>
+          
           {/* FlipHTML5 Embed */}
           <div className="w-full">
             <div style={{position:"relative", paddingTop:"max(60%,324px)", width:"100%", height:"0"}}>
@@ -77,7 +82,7 @@ export default function ArtArchivesPage() {
 
         {/* Methodology */}
         <div className="bg-[#181818] rounded-xl p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-6 text-center">Methodology</h2>
+          <h2 className="text-2xl font-bold mb-6 text-left">Methodology</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <div>
@@ -112,7 +117,7 @@ export default function ArtArchivesPage() {
 
         {/* Key Results */}
         <div className="bg-[#181818] rounded-xl p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-6 text-center">Key Results</h2>
+          <h2 className="text-2xl font-bold mb-6 text-left">Key Results</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-3">
               <div className="flex items-start gap-3">
@@ -147,7 +152,7 @@ export default function ArtArchivesPage() {
 
         {/* Impact & Future Work */}
         <div className="bg-[#181818] rounded-xl p-6 mb-8">
-          <h2 className="text-2xl font-bold mb-6 text-center">Impact & Future Work</h2>
+          <h2 className="text-2xl font-bold mb-6 text-left">Impact & Future Work</h2>
           <div className="text-gray-300 space-y-4">
             <p>
               The project enhanced understanding of AAA&apos;s digital footprint in art scholarship and laid groundwork for broader bibliometric analysis across museum archives.
