@@ -44,7 +44,7 @@ export default function MarketDataITSPage() {
             ))}
           </div>
         {/* Spacer between Tools & Technologies and Project Overview */}
-        <div className="h-8 md:h-16 lg:h-24" />
+        <div className="h-4 md:h-6 lg:h-8" />
 
         {/* Project Overview */}
         <div className="bg-[#181818] rounded-xl p-6 mb-8">

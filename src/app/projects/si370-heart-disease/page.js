@@ -26,13 +26,28 @@ const SI370HeartDiseaseProject = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
             Heart Disease Analysis Project SI370
           </h1>
-          <p className="text-lg text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto">
             A comprehensive analysis of heart disease datasets using Python and machine learning 
             techniques to identify key factors, trends, and predictive models for cardiovascular health.
           </p>
 
+          {/* Tools & Technologies Section */}
+          <div className="mb-12">
+            <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
+              {["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook", "Machine Learning", "Statistical Analysis"].map((tool) => (
+                <span 
+                  key={tool}
+                  className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          {/* Spacer between Tools & Technologies and Project Overview */}
+          <div className="h-4 md:h-6 lg:h-8" />
+
           {/* Project Links */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a
               href="https://github.com/annazjf/Heart-Disease-Analysis-Project-SI370"
               target="_blank"
@@ -44,6 +59,7 @@ const SI370HeartDiseaseProject = () => {
               </svg>
               View GitHub Repository
             </a>
+          </div>
           </div>
         </div>
 
@@ -63,19 +79,7 @@ const SI370HeartDiseaseProject = () => {
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Tools & Technologies</h3>
-                <div className="flex flex-wrap gap-2">
-                  {["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"].map((tool) => (
-                    <span 
-                      key={tool}
-                      className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              </div>
+
 
               <div>
                 <h3 className="text-lg font-medium text-primary-400 mb-2">Key Analysis Areas</h3>

@@ -1,0 +1,4 @@
+<!-- Placeholder for art-archives.jpg image -->
+<!-- This file serves as a reminder to add the actual project image -->
+<!-- Recommended dimensions: 800x600 or similar aspect ratio -->
+<!-- Image should represent web scraping, archives, or data analysis themes -->

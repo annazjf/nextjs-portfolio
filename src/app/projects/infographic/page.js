@@ -26,10 +26,26 @@ const InfographicProject = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
             Wine Infographic Design
           </h1>
-          <p className="text-lg text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto">
             Educational infographic design showcasing grape wine varieties, taste profiles, 
             and wine characteristics through engaging visual storytelling and design.
           </p>
+
+          {/* Tools & Technologies Section */}
+          <div className="mb-12">
+            <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
+              {["Adobe Illustrator", "Photoshop", "InDesign", "Color Theory", "Typography", "Visual Design", "Graphic Design", "Layout Design"].map((tool) => (
+                <span 
+                  key={tool}
+                  className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          {/* Spacer between Tools & Technologies and Project Overview */}
+          <div className="h-4 md:h-6 lg:h-8" />
+          </div>
         </div>
 
         {/* Project Details Grid */}
@@ -48,19 +64,7 @@ const InfographicProject = () => {
                 </p>
               </div>
 
-              <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Tools & Technologies</h3>
-                <div className="flex flex-wrap gap-2">
-                  {["Adobe Illustrator", "Photoshop", "InDesign", "Color Theory", "Typography", "Visual Design"].map((tool) => (
-                    <span 
-                      key={tool}
-                      className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                </div>
-              </div>
+
 
               <div>
                 <h3 className="text-lg font-medium text-primary-400 mb-2">Key Features</h3>

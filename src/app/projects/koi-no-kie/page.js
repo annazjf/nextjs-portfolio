@@ -24,10 +24,26 @@ const KoiNoKieProject = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
             Koi no Kie App Interface Design
           </h1>
-          <p className="text-lg text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+          <p className="text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto">
             Mobile app interface design for Koi no Kie featuring intuitive user experience, 
             modern UI patterns, clean navigation, and engaging visual design that enhances user interaction.
           </p>
+
+          {/* Tools & Technologies Section */}
+          <div className="mb-12">
+            <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
+              {["Figma", "UI/UX Design", "Prototyping", "User Research", "Mobile Design", "Design Systems", "Interactive Design", "Visual Design"].map((tool) => (
+                <span 
+                  key={tool}
+                  className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          {/* Spacer between Tools & Technologies and Project Overview */}
+          <div className="h-4 md:h-6 lg:h-8" />
+          </div>
         </div>
 
         {/* App Interface Preview - Full Width */}
@@ -58,7 +74,7 @@ const KoiNoKieProject = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Project Overview</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-lg font-medium text-primary-400 mb-2">Objective</h3>
               <p className="text-[#ADB7BE]">
@@ -68,19 +84,7 @@ const KoiNoKieProject = () => {
               </p>
             </div>
 
-            <div>
-              <h3 className="text-lg font-medium text-primary-400 mb-2">Tools & Technologies</h3>
-              <div className="flex flex-wrap gap-2">
-                {["Figma", "UI/UX Design", "Prototyping", "User Research", "Mobile Design", "Design Systems"].map((tool) => (
-                  <span 
-                    key={tool}
-                    className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
-                  >
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
+
 
             <div>
               <h3 className="text-lg font-medium text-primary-400 mb-2">Key Features</h3>

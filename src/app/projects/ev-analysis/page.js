@@ -24,13 +24,28 @@ export default function EVAnalysisPage() {
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           EV Car Market Data Analysis
         </h1>
-        <p className="text-lg text-gray-300 mb-8 text-center max-w-3xl mx-auto">
+        <p className="text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto">
           A data-driven analysis of electric vehicle market using statistical methods
           and data science techniques to uncover consumer behavior patterns and market opportunities based on buyer demographics and price listed.
         </p>
 
+        {/* Tools & Technologies Section */}
+        <div className="mb-12">
+          <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
+            {["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook", "Statistical Analysis", "Data Visualization"].map((tool) => (
+              <span 
+                key={tool}
+                className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
+              >
+                {tool}
+              </span>
+            ))}
+          </div>
+        {/* Spacer between Tools & Technologies and Project Overview */}
+        <div className="h-4 md:h-6 lg:h-8" />
+
         {/* Project Links */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
           <a
             href="https://github.com/annazjf/EV-Car-Marke-Data-Analysis-SI-300"
             target="_blank"
@@ -42,6 +57,7 @@ export default function EVAnalysisPage() {
             </svg>
             View on GitHub
           </a>
+        </div>
         </div>
 
         {/* Interactive Report */}
@@ -64,21 +80,6 @@ export default function EVAnalysisPage() {
                 title="EV Car Market Data Analysis Report"
               />
             </div>
-          </div>
-        </div>
-
-        {/* Tools & Technologies Section */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6 text-center text-primary-400">Tools & Technologies</h2>
-          <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
-            {["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook", "Statistical Analysis", "Data Visualization"].map((tool) => (
-              <span 
-                key={tool}
-                className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
-              >
-                {tool}
-              </span>
-            ))}
           </div>
         </div>
 

@@ -64,6 +64,16 @@ const projectsData = [
     previewUrl: "/projects/market-data-its",
     type: "poster"
   },
+  {
+    id: 7,
+    title: "Uncovering Art History: Web Scraping Archives",
+    description: "Web scraping and text analysis project with Archives of American Art and University of Michigan. Used machine learning and NLP to uncover citation patterns in digital art scholarship. 2025.",
+    image: "/images/projects/AAA.jpg",
+    tag: ["All", "Data"], 
+    gitUrl: "/",
+    previewUrl: "/projects/art-archives",
+    type: "flipbook"
+  },
 ];
 
 const ProjectsSection = () => {
@@ -97,8 +107,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Data"
+          isSelected={tag === "Data"}
         />
         <ProjectTag
           onClick={handleTagChange}
@@ -107,8 +117,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Data"
-          isSelected={tag === "Data"}
+          name="Web"
+          isSelected={tag === "Web"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
