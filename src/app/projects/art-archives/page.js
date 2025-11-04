@@ -32,7 +32,7 @@ export default function ArtArchivesPage() {
         <div className="mb-12">
           {/* <h2 className="text-2xl font-bold mb-6 text-center">Tools & Technologies</h2> */}
           <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
-            {["Python", "Selenium", "BeautifulSoup", "Requests", "Pandas", "SentenceTransformer", "NLP", "Machine Learning", "Text Analysis", "Web Scraping", "Cosine Similarity", "Matplotlib", "VS Code"].map((tool) => (
+            {["Python", "Selenium", "BeautifulSoup", "Requests", "Pandas", "SentenceTransformer", "NLP", "Machine Learning", "Web Scraping", "Cosine Similarity", "Matplotlib"].map((tool) => (
               <span 
                 key={tool}
                 className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
@@ -49,7 +49,7 @@ export default function ArtArchivesPage() {
           <h2 className="text-2xl font-bold mb-4 text-left">Project Overview</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              This project, conducted in collaboration with the Archives of American Art (AAA), aimed to uncover how AAA&apos;s collections and journal articles are cited across online repositories. By combining web scraping, text analysis, and natural language processing, we created a dataset of digital citations that provides insight into how researchers engage with the AAA&apos;s resources.
+              This project, conducted in collaboration with the Archives of American Art, aimed to uncover how the organization&apos;s collections and journal articles are cited across online repositories. By combining web scraping, text analysis, and natural language processing, we created a dataset of digital citations that provides insight into how researchers engage with the organization&apos;s resources.
             </p>
             <p className="text-gray-400 text-sm">
               <span className="font-medium text-gray-300">Note:</span> Some sensitive information is hidden in the documentation to protect data privacy.
@@ -88,7 +88,7 @@ export default function ArtArchivesPage() {
               <div>
                 <h4 className="font-semibold mb-2 text-primary-400">Web Scraping</h4>
                 <p className="text-gray-300">
-                  Automated extraction of metadata and snippets mentioning AAA collections and journals using Python scripts.
+                  Automated extraction of metadata and snippets mentioning Archives of American Art collections and journals using Python scripts.
                 </p>
               </div>
               <div>
@@ -102,7 +102,7 @@ export default function ArtArchivesPage() {
               <div>
                 <h4 className="font-semibold mb-2 text-primary-400">Similarity Modeling</h4>
                 <p className="text-gray-300">
-                  Used sentence embeddings and cosine similarity to link snippets to the most relevant AAA collection titles.
+                  Used sentence embeddings and cosine similarity to link snippets to the most relevant Archives of American Art collection titles.
                 </p>
               </div>
               <div>
@@ -123,7 +123,7 @@ export default function ArtArchivesPage() {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-300">
-                  Successfully compiled datasets linking AAA collection titles to thousands of online publications.
+                  Successfully compiled datasets linking Archives of American Art collection titles to thousands of online publications.
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -143,7 +143,7 @@ export default function ArtArchivesPage() {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-300">
-                  Produced reproducible documentation and scripts, allowing the AAA to extend the scraping framework to other repositories.
+                  Produced reproducible documentation and scripts, allowing the organization to extend the scraping framework to other repositories.
                 </p>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function ArtArchivesPage() {
           <h2 className="text-2xl font-bold mb-6 text-left">Impact & Future Work</h2>
           <div className="text-gray-300 space-y-4">
             <p>
-              The project enhanced understanding of AAA&apos;s digital footprint in art scholarship and laid groundwork for broader bibliometric analysis across museum archives.
+              The project enhanced understanding of the Archives of American Art&apos;s digital footprint in art scholarship and laid groundwork for broader bibliometric analysis across museum archives.
             </p>
             <div>
               <h4 className="font-semibold mb-2 text-primary-400">Future Directions</h4>

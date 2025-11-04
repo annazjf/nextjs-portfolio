@@ -28,13 +28,13 @@ const InfographicProject = () => {
           </h1>
           <p className="text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto">
             Educational infographic design showcasing grape wine varieties, taste profiles, 
-            and wine characteristics through engaging visual storytelling and design.
+            and wine characteristics through engaging visual storytelling and design to enhance wine appreciation.
           </p>
 
           {/* Tools & Technologies Section */}
           <div className="mb-12">
             <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
-              {["Adobe Illustrator", "Photoshop", "InDesign", "Color Theory", "Typography", "Visual Design", "Graphic Design", "Layout Design"].map((tool) => (
+              {["Adobe Illustrator", "Photoshop", "Color Theory", "Typography", "Visual Design", "Graphic Design"].map((tool) => (
                 <span 
                   key={tool}
                   className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
@@ -48,99 +48,59 @@ const InfographicProject = () => {
           </div>
         </div>
 
-        {/* Project Details Grid */}
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
-          {/* Project Info */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">Project Overview</h2>
-            
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Objective</h3>
-                <p className="text-[#ADB7BE]">
-                  Create an educational and visually appealing infographic that explains 
-                  wine varieties, taste characteristics, and wine knowledge in an 
-                  accessible and engaging format for wine enthusiasts and beginners.
-                </p>
-              </div>
-
-
-
-              <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Key Features</h3>
-                <ul className="text-[#ADB7BE] space-y-2">
-                  <li>• Wine variety classifications (Red, Rosé, White)</li>
-                  <li>• Taste profile breakdown and descriptors</li>
-                  <li>• Seasonal availability information</li>
-                  <li>• Digestible elements breakdown</li>
-                  <li>• Visual world map with wine consumption mapping</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Impact</h3>
-                <p className="text-[#ADB7BE]">
-                  This educational wine infographic serves as a comprehensive guide 
-                  for wine enthusiasts and beginners, breaking down complex wine 
-                  knowledge into digestible visual elements that enhance wine 
-                  appreciation and selection confidence.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Interactive Infographic Display */}
-          <div>
-                        <div>
-              <h2 className="text-2xl font-semibold">Interactive Wine Infographic</h2>
-              <p className="text-[#ADB7BE] text-sm mt-2">
-                Explore the wine guide with page-flipping interactions
-              </p>
-              <p className="text-[#ADB7BE] text-sm mt-2">
-                Click the &quot;+&quot; button to expand to full screen for the best viewing experience.
-              </p>
-            </div>
-            
-            {/* FlipHTML5 Embed */}
-            <div className="bg-[#181818] p-4 rounded-lg">
-              <div 
-                style={{
-                  position: "relative",
-                  paddingTop: "max(60%, 324px)",
-                  width: "100%",
-                  height: 0
-                }}
-              >
-                <iframe 
-                  style={{
-                    position: "absolute",
-                    border: "none",
-                    width: "100%",
-                    height: "100%",
-                    left: 0,
-                    top: 0
-                  }}
-                  src="https://online.fliphtml5.com/riccr/mpui/"
-                  seamless="seamless"
-                  scrolling="no"
-                  frameBorder="0"
-                  allowTransparency="true"
-                  allowFullScreen="true"
-                  title="Interactive Wine Infographic"
-                />
-              </div>
-            </div>
-            
-            {/* Interaction Guide */}
-            <div className="mt-4 text-left">
-              <div className="text-[#ADB7BE] text-sm space-y-1">
-                <p>🔍 Use built-in zoom &quot;+&quot; icon on the bottom left corner</p>
-                <p>📱 Swipe on mobile</p>
+        {/* Project Overview */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-left">Project Overview</h2>
+          <div className="text-gray-300 space-y-4">
+            <p>
+              Create an educational and visually appealing infographic that explains wine varieties, taste characteristics, and wine knowledge in an accessible and engaging format for wine enthusiasts and beginners.
+            </p>
+            <div>
+              <h4 className="font-semibold mb-2 text-primary-400">Key Features</h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span>Wine variety classifications (Red, Rosé, White)</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span>Taste profile breakdown and descriptors</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span>Seasonal availability information</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span>Visual world map with wine consumption data</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        {/* Design Highlights */}
+
+        {/* Interactive Report */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-left">Interactive Wine Infographic</h2>
+          <p className="text-gray-300 mb-6 text-center">
+            Click the &quot;+&quot; button to expand to full screen for the best viewing experience.
+          </p>
+          
+          {/* FlipHTML5 Embed */}
+          <div className="w-full">
+            <div style={{position:"relative", paddingTop:"max(60%,324px)", width:"100%", height:"0"}}>
+              <iframe 
+                style={{position:"absolute", border:"none", width:"100%", height:"100%", left:"0", top:"0"}} 
+                src="https://online.fliphtml5.com/riccr/mpui/" 
+                seamless="seamless" 
+                allowTransparency="true" 
+                allowFullScreen="true"
+                title="Interactive Wine Infographic"
+              />
+            </div>
+          </div>
+        </div>
+        {/* Design Elements */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Design Elements</h2>
           <div className="grid md:grid-cols-2 gap-8">
@@ -180,7 +140,6 @@ const InfographicProject = () => {
             </div>
           </div>
         </div>
-
 
         {/* Floating View More Projects Button */}
         <Link 

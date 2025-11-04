@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 const SI370HeartDiseaseProject = () => {
-
   return (
     <div className="min-h-screen bg-[#121212] text-white">
       {/* Floating Back Button */}
@@ -20,152 +18,190 @@ const SI370HeartDiseaseProject = () => {
       
       {/* Header */}
       <div className="container mx-auto px-12 py-8">
-        
-        {/* Project Header */}
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+          Heart Disease Risk Factor Analysis
+        </h1>
+        <p className="text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto">
+          Statistical analysis of heart disease risk factors to identify key predictors and inform clinical decision-making.
+        </p>
+
+        {/* Tools & Technologies Section */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-            Heart Disease Analysis Project SI370
-          </h1>
-          <p className="text-lg text-gray-300 mb-8 text-center max-w-4xl mx-auto">
-            A comprehensive analysis of heart disease datasets using Python and machine learning 
-            techniques to identify key factors, trends, and predictive models for cardiovascular health.
-          </p>
-
-          {/* Tools & Technologies Section */}
-          <div className="mb-12">
-            <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
-              {["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook", "Machine Learning", "Statistical Analysis"].map((tool) => (
-                <span 
-                  key={tool}
-                  className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
-                >
-                  {tool}
-                </span>
-              ))}
-            </div>
-          {/* Spacer between Tools & Technologies and Project Overview */}
-          <div className="h-4 md:h-6 lg:h-8" />
-
-          {/* Project Links */}
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <a
-              href="https://github.com/annazjf/Heart-Disease-Analysis-Project-SI370"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-colors duration-300 flex items-center gap-2"
-            >
-              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              View GitHub Repository
-            </a>
+          <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
+            {["Python", "Pandas", "Statsmodels", "Scikit-learn", "Linear Regression", "EDA", "Feature Engineering", "Predictive Modeling"].map((tool) => (
+              <span 
+                key={tool}
+                className="px-3 py-1 bg-[#33353F] rounded-full text-sm"
+              >
+                {tool}
+              </span>
+            ))}
           </div>
+        </div>
+        
+        {/* Spacer between Tools & Technologies and Project Overview */}
+        <div className="h-4 md:h-6 lg:h-8" />
+
+        {/* Project Overview */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-left">Project Overview</h2>
+          <div className="text-gray-300 space-y-4">
+            <p>
+              Heart disease remains the leading cause of death globally, with treatment costs exceeding $250 billion over three years (CDC). This project analyzed key patient risk factors—blood pressure, cholesterol, chest pain, and exercise metrics—to quantify their predictive power and guide clinical interventions.
+            </p>
+            <p className="text-gray-400 text-sm">
+              <span className="font-medium text-gray-300">Note:</span> All data used for this analysis is anonymized, publicly available data to ensure privacy and compliance.
+            </p>
           </div>
         </div>
 
-        {/* Project Details Grid */}
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
-          {/* Project Info */}
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">Project Overview</h2>
-            
-            <div className="space-y-6">
+        {/* Interactive Report */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-left">Interactive Analysis Report</h2>
+          <p className="text-gray-300 mb-6 text-center">
+            Click the &quot;+&quot; button to expand to full screen for the best viewing experience.
+          </p>
+          
+          {/* FlipHTML5 Embed */}
+          <div className="w-full">
+            <div style={{position:"relative", paddingTop:"max(60%,324px)", width:"100%", height:"0"}}>
+              <iframe 
+                style={{position:"absolute", border:"none", width:"100%", height:"100%", left:"0", top:"0"}} 
+                src="https://online.fliphtml5.com/riccr/imrl/" 
+                seamless="seamless" 
+                allowTransparency="true" 
+                allowFullScreen="true"
+                title="SI 370 Heart Disease Analysis Interactive Report"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Project Objectives */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-6 text-left">Project Objectives</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="space-y-4">
               <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Objective</h3>
-                <p className="text-[#ADB7BE]">
-                  Analyze heart disease datasets to identify key risk factors, develop predictive models, 
-                  and provide insights into cardiovascular health trends using data science methodologies 
-                  and machine learning algorithms.
+                <h4 className="font-semibold mb-2 text-primary-400">Variable Prioritization</h4>
+                <p className="text-gray-300">
+                  Determine which of the key patient health metrics (Age, Cholesterol, RestingBP, MaxHR, Oldpeak) is the strongest single predictor of heart disease.
                 </p>
               </div>
-
-
-
               <div>
-                <h3 className="text-lg font-medium text-primary-400 mb-2">Key Analysis Areas</h3>
-                <ul className="text-[#ADB7BE] space-y-2">
-                  <li>• Exploratory Data Analysis (EDA)</li>
-                  <li>• Feature correlation and selection</li>
-                  <li>• Machine learning model development</li>
-                  <li>• Risk factor identification</li>
-                  <li>• Predictive accuracy evaluation</li>
-                  <li>• Data visualization and insights</li>
-                </ul>
+                <h4 className="font-semibold mb-2 text-primary-400">Statistical Modeling</h4>
+                <p className="text-gray-300">
+                  Applied Linear Regression to quantify individual variable strength and assess dataset quality for clinical insights.
+                </p>
               </div>
             </div>
-          </div>
-
-          {/* Interactive Report Display */}
-          <div>
-            <div className="mb-6">
-              <h2 className="text-2xl font-semibold">Interactive Project Report</h2>
-              <p className="text-[#ADB7BE] text-sm mt-2">
-                Flip through the complete data science analysis report
-              </p>
-              <p className="text-[#ADB7BE] text-sm mt-2">
-                Click the &quot;+&quot; button to expand to full screen for the best viewing experience.
-              </p>
-            </div>
-            
-            {/* FlipHTML5 Embed */}
-            <div className="bg-[#181818] p-4 rounded-lg">
-              <div 
-                style={{
-                  position: "relative",
-                  paddingTop: "max(60%, 324px)",
-                  width: "100%",
-                  height: 0
-                }}
-              >
-                <iframe 
-                  style={{
-                    position: "absolute",
-                    border: "none",
-                    width: "100%",
-                    height: "100%",
-                    left: 0,
-                    top: 0
-                  }}
-                  src="https://online.fliphtml5.com/riccr/imrl/"
-                  seamless="seamless"
-                  allowTransparency="true"
-                  allowFullScreen="true"
-                  title="SI 370 Heart Disease Analysis Interactive Report"
-                />
-              </div>
-            </div>
-            
-            {/* Interaction Guide */}
-            <div className="mt-4 text-left">
-              <div className="text-[#ADB7BE] text-sm space-y-1">
-                <p>🔍 Use built-in zoom &quot;+&quot; icon on the bottom left corner</p>
-                <p>📱 Swipe on mobile</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Analysis Highlights */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Analysis Highlights</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-[#181818] p-6 rounded-lg">
-              <h3 className="text-lg font-semibold mb-3 text-primary-400">Data Science Methodology</h3>
-              <p className="text-[#ADB7BE] mb-4">
-                Applied systematic data science workflow including data cleaning, exploratory analysis, 
-                feature engineering, model selection, and performance evaluation using industry-standard 
-                Python libraries and statistical techniques.
-              </p>
-              <div className="flex gap-2 flex-wrap">
-                <div className="px-2 py-1 bg-blue-900/30 text-blue-300 rounded text-xs">EDA</div>
-                <div className="px-2 py-1 bg-green-900/30 text-green-300 rounded text-xs">ML Models</div>
-                <div className="px-2 py-1 bg-purple-900/30 text-purple-300 rounded text-xs">Statistics</div>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold mb-2 text-primary-400">Clinical Application</h4>
+                <p className="text-gray-300">
+                  Translate findings into actionable recommendations for healthcare professionals and public health policy.
+                </p>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Key Insights & Results */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-6 text-left">Key Insights & Results</h2>
+          <p className="text-gray-300 mb-4">
+            Analysis revealed important insights about predictor strength and model limitations:
+          </p>
+          <div className="grid md:grid-cols-1 gap-6">
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">
+                  <strong>Single Variable Limitation:</strong> Resting blood pressure alone showed weak predictive power (R² = 0.012), explaining only 1.2% of heart disease variability.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">
+                  <strong>Multivariate Approach Required:</strong> Results indicated need for models incorporating multiple factors including cholesterol, chest pain type, and exercise metrics.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">
+                  <strong>Model Type Optimization:</strong> Categorical variables like ChestPainType and ExerciseAngina showed potential as stronger predictors than continuous metrics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        {/* Strategic Recommendations */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-6 text-left">Strategic Recommendations</h2>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">
+                  <strong>Classification Models:</strong> Implement Logistic Regression for binary heart disease prediction with probability interpretation.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">
+                  <strong>Data Balancing:</strong> Standardize sample sizes across risk factor groups to improve model stability.
+                </p>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">
+                  <strong>Feature Engineering:</strong> Focus on categorical variables (ChestPainType, ST_Slope) for enhanced predictive power.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary-400 rounded-full mt-2 flex-shrink-0"></div>
+                <p className="text-gray-300">
+                  <strong>Clinical Integration:</strong> Translate insights into actionable intervention priorities for healthcare providers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Impact & Future Work */}
+        <div className="bg-[#181818] rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-6 text-left">Impact & Future Work</h2>
+          <div className="text-gray-300 space-y-4">
+            <p>
+              Established foundational understanding of variable relationships and identified clear pathway for building clinically actionable predictive models.
+            </p>
+            <div>
+              <h4 className="font-semibold mb-2 text-primary-400">Future Directions</h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span><strong>Logistic Regression Implementation:</strong> Develop and test a full Logistic Regression model to calculate meaningful probabilities and interpret risk factors for classification.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span><strong>Enhanced Data Balancing:</strong> Implement data resampling techniques to ensure balanced representation across all blood pressure groups, strengthening the robustness of future models.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span><strong>Survival Analysis:</strong> Expand the model to include time-to-event analysis (e.g., survival analysis) to predict disease progression or mortality over time.</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 bg-primary-400 rounded-full flex-shrink-0 mt-2"></div>
+                  <span><strong>Model Deployment:</strong> Develop a simple dashboard (e.g., using Power BI or Figma) for doctors to input patient parameters and receive a risk score.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Floating View More Projects Button */}
         <Link 
